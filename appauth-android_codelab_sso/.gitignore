@@ -1,0 +1,4 @@
+.gradle
+.idea
+appauth-android_codelab_sso.iml
+local.properties
