@@ -25,9 +25,9 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
 
-        private val SHARED_PREFERENCES_NAME = "AuthStatePreference"
-        private val AUTH_STATE = "AUTH_STATE"
-        private val USED_INTENT = "USED_INTENT"
+        private const val SHARED_PREFERENCES_NAME = "AuthStatePreference"
+        private const val AUTH_STATE = "AUTH_STATE"
+        private const val USED_INTENT = "USED_INTENT"
     }
 
     private lateinit var mMainApplication: MainApplication
@@ -134,7 +134,7 @@ class MainActivity : AppCompatActivity() {
     private fun persistAuthState(authState: AuthState) {
         getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE).edit()
                 .putString(AUTH_STATE, authState.toJsonString())
-                .commit()
+                .apply()
         enablePostAuthorizationFlows()
     }
 

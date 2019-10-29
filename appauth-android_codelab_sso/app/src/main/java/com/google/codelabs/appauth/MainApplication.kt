@@ -4,11 +4,7 @@ import android.app.Application
 
 class MainApplication : Application() {
 
-    override fun onCreate() {
-        super.onCreate()
-    }
-
     companion object {
-        public const val LOG_TAG = "AppAuthSample"
+        const val LOG_TAG = "AppAuthSample"
     }
 }
