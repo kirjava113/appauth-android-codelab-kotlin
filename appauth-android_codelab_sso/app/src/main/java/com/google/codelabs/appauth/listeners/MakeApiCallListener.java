@@ -9,8 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.codelabs.appauth.MainActivity;
 import com.google.codelabs.appauth.R;
+import com.google.codelabs.appauth.view.MainActivity;
 import com.squareup.picasso.Picasso;
 
 import net.openid.appauth.AuthState;
